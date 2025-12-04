@@ -11,26 +11,30 @@
 <div class="container"> 
 <!-- Header --> 
 <header class="site-header"> 
-<div class="logo-container"> 
-<img src="img/LOGO.jpeg" alt="Logo SPANGLISH" class="logo"> 
-<span class="site-title">SPANGLISH</span> 
-</div> 
+    <div class="logo-container"> 
+        <img src="img/LOGO.jpeg" alt="Logo SPANGLISH" class="logo"> 
+        <span class="site-title">SPANGLISH</span> 
+    </div> 
 
+    <!-- Botón para menú responsive -->
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-<nav class="nav"> 
-<a href="#home" data-key="home">Inicio</a> 
-<a href="#about" data-key="about">Sobre Nosotros</a> 
-<a href="#methodology" data-key="methodology">Nuestra Metodología</a> 
-<a href="#admissions" data-key="admissions">Inscripciones</a> 
-<a href="#contact" data-key="contact">Contacto</a> 
-</nav> 
-<select id="lang-select"> 
-<option value="es" selected>ES</option> 
-<option value="en">EN</option> 
-<option value="ru">RU</option> 
-</select> 
-<button class="menu-toggle" aria-label="Abrir menú">☰</button>
-</header> 
+    <nav class="nav"> 
+        <a href="#home" data-key="home">Inicio</a> 
+        <a href="#about" data-key="about">Sobre Nosotros</a> 
+        <a href="#methodology" data-key="methodology">Nuestra Metodología</a> 
+        <a href="#admissions" data-key="admissions">Inscripciones</a> 
+        <a href="#contact" data-key="contact">Contacto</a> 
+    </nav> 
+
+   <select id="lang-select">
+    <option value="es" selected>ES</option>
+    <option value="en">EN</option>
+    <option value="ru">RU</option>
+    </select>
+
+</header>
+
 
 <!-- Video --> 
 <main> 
@@ -156,14 +160,6 @@ Selecciona una opción para ver la información.
 </div> 
 <script src="/js/landing.js" defer></script> 
 <script src="/js/traslator.js" defer></script> 
-<script>
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-</script>
 
 </body> 
 </html>
