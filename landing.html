@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html> 
 <html lang="es"> 
 <head> 
@@ -62,10 +63,62 @@
       <p data-key="card3_text">¿No sabes Inglés? No hay problema, te brindamos un traductor para tus primeras lecciones</p>
     </div>
   </div>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Minimalista</title>
+<link rel="stylesheet" href="/style/landing.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Header -->
+
+    <header class="site-header">
+    <div class="logo-container">
+        <img src="img/LOGO.jpeg" alt="Logo SPANGLISH" class="logo">
+        <span class="site-title">SPANGLISH</span>
+    </div>
+    <nav class="nav">
+        <a href="#home" data-key="home">Inicio</a>
+        <a href="#about" data-key="about">Sobre Nosotros</a>
+        <a href="#methodology" data-key="methodology">Nuestra Metodología</a>
+        <a href="#admissions" data-key="admissions">Inscripciones</a>
+        <a href="#contact" data-key="contact">Contacto</a>
+    </nav>
+    <select id="lang-select">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+    </select>
+</header>
+
+
+<!-- Video -->
+
+<main>
+    <h1 id="main-title">Bienvenido a SPANGLISH</h1>
+    <p id="main-text">Sumgerte en la Cultura Hispano Hablante</p>
+
+    <div class="video-container">
+        <div class="video-card">
+            <video class="video" muted loop preload="metadata">
+                <source src="videos/vi2.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+           
+        </div>
+    </div>
+>>>>>>> 7501bea8c4c6dacb253e3d64c24dfbf57a3d2050
 </main>
 
 
 
+<<<<<<< HEAD
 <br> 
 <br> 
 
@@ -155,3 +208,192 @@ Selecciona una opción para ver la información.
 <script src="/js/traslator.js" defer></script> 
 </body> 
 </html>
+=======
+
+<!-- Cards -->
+
+
+
+<main>
+    <h1 id="main-title">Da tus primeros pasos en el Español</h1>
+    <p id="main-text">¿Qué ofrecemos?</p>
+
+    <div class="cards-section">
+        <div class="cards-container">
+            <div class="card">
+                <h2>Maestros Nativos</h2>
+                <p>Profesores de todo Latinoamérica <br> para que puedas conocer más sobre <br> la cultura Latina!</p>
+            </div>
+            <div class="card">
+                <h2>Clases en Inglés</h2>
+                <p>Las clases son en Inglés para mejor comunicación entre alumno y maestro</p>
+            </div>
+            <div class="card">
+                <h2>Traductores</h2>
+                <p>¿No sabes Inglés? No hay problema, te brindamos un traductor para tus primeras lecciones</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- Galery -->
+
+<section class="gallery-videos-section">
+    <h2>Nuestra Cultura</h2>
+    <div class="gallery-videos-container">
+        <div class="gallery-video-card">
+            <video src="videos/colo.mp4" muted preload="metadata" class="gallery-video"></video>
+        </div>
+        <div class="gallery-video-card">
+            <video src="videos/peru.mp4" muted preload="metadata" class="gallery-video"></video>
+        </div>
+        <div class="gallery-video-card">
+            <video src="videos/arge.mp4" muted preload="metadata" class="gallery-video"></video>
+        </div>
+        <div class="gallery-video-card">
+            <video src="videos/chil.mp4" muted preload="metadata" class="gallery-video"></video>
+        </div>
+        <div class="gallery-video-card">
+            <video src="videos/boliv.mp4" muted preload="metadata" class="gallery-video"></video>
+        </div>
+        <div class="gallery-video-card">
+            <video src="videos/mexi.mp4" muted preload="metadata" class="gallery-video"></video>
+        </div>
+    </div>
+</section>
+
+<!-- Modalidad -->
+
+<section class="modalidad-section">
+    <h2>Modalidad de Clases</h2>
+
+    <div class="mode-container">
+
+        <div class="mode-box" data-mode="virtual">
+            <h3>Clases Virtuales</h3>
+        </div>
+
+        <div class="mode-box" data-mode="horarios">
+            <h3>Horarios Flexibles</h3>
+        </div>
+
+    </div>
+
+    <p class="mode-description" id="mode-description">
+        Selecciona una opción para ver la información.
+    </p>
+</section>
+
+
+<!-- Sabores -->
+
+<section class="sabores-section">
+    <h2>El rico sabor de ser Hispano</h2>
+
+    <div class="sabores-container">
+
+        <div class="music-card" data-genre="salsa">
+            <div class="music-overlay">
+                <button class="play-btn">▶</button>
+                <h3>Salsa</h3>
+            </div>
+            <audio src="/mp3/lanoche.mp3"></audio>
+        </div>
+
+        <div class="music-card" data-genre="bachata">
+            <div class="music-overlay">
+                <button class="play-btn">▶</button>
+                <h3>Bachata</h3>
+            </div>
+            <audio src="/mp3/imitadora.mp3"></audio>
+        </div>
+
+        <div class="music-card" data-genre="reggaeton">
+            <div class="music-overlay">
+                <button class="play-btn">▶</button>
+                <h3>Reggaetón</h3>
+            </div>
+            <audio src="/mp3/gasolina.mp3"></audio>
+        </div>
+
+        <div class="music-card" data-genre="urbana">
+            <div class="music-overlay">
+                <button class="play-btn">▶</button>
+                <h3>Urbana</h3>
+            </div>
+            <audio src="/mp3/debitirar.mp3"></audio>
+        </div>
+
+    </div>
+</section>
+
+<!-- Invitacion -->
+
+<section class="invite-section">
+    <h2>¡Únete a SPANGLISH!</h2>
+    <p>Inscríbete y empieza tu camino para dominar el Español o el Inglés con clases modernas, dinámicas y 100% enfocadas en conversación.</p>
+
+    <form id="invite-form" class="invite-form">
+        <input type="text" id="name" placeholder="Tu nombre" required>
+        <input type="tel" id="phone" placeholder="Número de WhatsApp" required>
+
+        <select id="language" required>
+            <option value="">Quiero aprender...</option>
+            <option value="Español">Español</option>
+            <option value="Inglés">Inglés</option>
+        </select>
+
+        <button type="submit" class="invite-btn">Enviar inscripción</button>
+    </form>
+
+    <p class="invite-note">Nos contactaremos contigo por Telegram o WhatsApp.</p>
+</section>
+
+<!-- footer -->
+
+<footer class="footer-elegant">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h2>SPANGLISH</h2>
+            <p>Aprende idiomas de forma moderna, práctica y 100% conversacional.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#metodologia">Metodología</a></li>
+                <li><a href="#inscripciones">Inscripciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://t.me/bladdlal" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://wa.me/123456789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 SPANGLISH — Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+
+
+<script src="/js/landing.js" defer></script>
+</body>
+</html>
+
+>>>>>>> 7501bea8c4c6dacb253e3d64c24dfbf57a3d2050
