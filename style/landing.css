@@ -393,33 +393,42 @@ main p {
 
 .lang-container {
     width: 100%;
-    position: fixed;       /* fijo en la parte inferior */
+    position: fixed;           /* fijo en la parte inferior */
     bottom: 0;
     left: 0;
     display: flex;
     justify-content: flex-end; /* alineado a la derecha */
-    padding: 10px 20px;
-    background: rgba(255,255,255,0.95); /* fondo semi-transparente */
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.05); /* sombra arriba */
-    z-index: 999; /* siempre encima del contenido */
+    padding: 15px 25px;
+    background: rgba(255,255,255,0.95); /* fondo limpio y translúcido */
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.05); /* sombra sutil arriba */
+    z-index: 999; 
+    backdrop-filter: blur(8px); /* efecto cristal suave */
 }
 
 #lang-select {
-    padding: 8px 18px;
-    border-radius: 25px; 
-    border: 1px solid #001D4A;
-    background: linear-gradient(145deg, #ffffff, #f0f2f5);
+    padding: 10px 20px;
+    border-radius: 30px; 
+    border: none;
+    background: linear-gradient(145deg, #ffffff, #f0f2f5); /* degradado sutil */
     color: #001D4A;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,29,74,0.15);
+    box-shadow: 0 4px 12px rgba(0,29,74,0.08); /* sombra suave */
     transition: all 0.3s ease;
+    appearance: none; /* quitar estilo nativo del navegador */
 }
 
+/* Hover elegante */
 #lang-select:hover {
-    background-color: #001D4A;
+    background: #001D4A;
     color: #ffffff;
-    box-shadow: 0 6px 16px rgba(0,29,74,0.25);
+    box-shadow: 0 6px 20px rgba(0,29,74,0.2);
     transform: translateY(-2px);
+}
+
+/* Foco elegante */
+#lang-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0,29,74,0.2);
 }
