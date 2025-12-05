@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/landing.css"> 
+    <link rel="stylesheet" href="/style/incripciones.css"> 
+</head>
+<body>
+ <header class="site-header"> 
+    <div class="logo-container"> 
+        <img src="img/LOGO.jpeg" alt="Logo SPANGLISH" class="logo"> 
+        <span class="site-title">SPANGLISH</span> 
+    </div> 
+
+    <!-- Botón para menú responsive -->
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <nav class="nav"> 
+        <a href="landing.html" data-key="home">Inicio</a> 
+        <a href="#about" data-key="about">Sobre Nosotros</a> 
+        <a href="#methodology" data-key="methodology">Nuestra Metodología</a> 
+        <a href="#admissions" data-key="admissions">Inscripciones</a> 
+        <a href="#contact" data-key="contact">Contacto</a> 
+    </nav> 
+
+  </header>
+<!-- Selector de idioma -->
+<div class="lang-container">
+    <select id="lang-select">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+    </select>
+</div>
+
+<br>
+
+<section class="cards-section">
+    <h2 data-key="individual_title">Clases de Español Individual</h2>
+    <div class="cards-container">
+
+        <!-- Card 20 clases -->
+        <div class="card reveal">
+            <h3 data-key="card20_title">20 clases al mes</h3>
+            <p data-key="card20_duration">Duración: 1h 20m cada clase</p>
+            <p class="price">20 000 ₽</p>
+            <p class="description" data-key="card20_desc">Ideal para avanzar rápido y dominar el idioma.</p>
+            <ul class="features">
+                <li data-key="card20_feat1">Libros de aprendizaje y vocabulario</li>
+                <li data-key="card20_feat2">Conversación con nativos</li>
+                <li data-key="card20_feat3">Enfocado en prácticas reales</li>
+            </ul>
+            <p class="recommendation" data-key="card20_reco"><strong>Recomendado:</strong> para quienes quieren resultados intensivos.</p>
+            <a href="contacto.html" class="btn-contact" data-key="contact_btn">Contáctanos ya</a>
+        </div>
+
+        <!-- Card 12 clases -->
+        <div class="card reveal">
+            <h3 data-key="card12_title">12 clases al mes</h3>
+            <p data-key="card12_duration">Duración: 1h 20m cada clase</p>
+            <p class="price">15 000 ₽</p>
+            <p class="description" data-key="card12_desc">Balance perfecto entre intensidad y tiempo disponible.</p>
+            <ul class="features">
+                <li data-key="card12_feat1">Libros de aprendizaje y vocabulario</li>
+                <li data-key="card12_feat2">Conversación con nativos</li>
+                <li data-key="card12_feat3">Enfocado en prácticas reales</li>
+            </ul>
+            <p class="recommendation" data-key="card12_reco"><strong>Recomendado:</strong> para estudiantes regulares que quieren avanzar de forma constante.</p>
+            <a href="contacto.html" class="btn-contact" data-key="contact_btn">Contáctanos ya</a>
+        </div>
+
+        <!-- Card 8 clases -->
+        <div class="card reveal">
+            <h3 data-key="card8_title">8 clases al mes</h3>
+            <p data-key="card8_duration">Duración: 1h 20m cada clase</p>
+            <p class="price">10 000 ₽</p>
+            <p class="description" data-key="card8_desc">Opción más ligera para mantener el idioma activo.</p>
+            <ul class="features">
+                <li data-key="card8_feat1">Libros de aprendizaje y vocabulario</li>
+                <li data-key="card8_feat2">Conversación con nativos</li>
+                <li data-key="card8_feat3">Enfocado en prácticas reales</li>
+            </ul>
+            <p class="recommendation" data-key="card8_reco"><strong>Recomendado:</strong> para quienes quieren practicar de manera flexible.</p>
+            <a href="contacto.html" class="btn-contact" data-key="contact_btn">Contáctanos ya</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Clases grupales -->
+<section class="cards-section">
+    <h2 data-key="group_title">Clases Grupales de Español</h2>
+    <div class="cards-container">
+
+        <div class="card reveal">
+            <h3 data-key="group_card_title">5 alumnos</h3>
+            <p data-key="group_card_duration">20 clases al mes</p>
+            <p data-key="group_card_length">Duración: 1h 20m cada clase</p>
+            <p class="price">15 000 ₽</p>
+            <p class="description" data-key="group_card_desc">Clases grupales para mejorar la interacción y conversación.</p>
+            <ul class="features">
+                <li data-key="group_card_feat1">Libros de aprendizaje y vocabulario</li>
+                <li data-key="group_card_feat2">Conversación con nativos</li>
+                <li data-key="group_card_feat3">Enfocado en prácticas reales</li>
+            </ul>
+            <p class="recommendation" data-key="group_card_reco"><strong>Recomendado:</strong> para quienes disfrutan aprender en grupo y compartir experiencias.</p>
+            <a href="contacto.html" class="btn-contact" data-key="contact_btn">Contáctanos ya</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- footer --> 
+<footer class="footer-elegant"> 
+<div class="footer-container"> 
+
+<div class="footer-brand"> 
+<h2>SPANGLISH</h2> 
+<p>Aprende idiomas de forma moderna, práctica y 100% conversacional.</p> 
+</div> 
+
+<div class="footer-links"> 
+<h3>Enlaces</h3> 
+<ul> 
+<li><a href="landing.html">Inicio</a></li> 
+<li><a href="#about">Sobre Nosotros</a></li> 
+<li><a href="#metodologia">Metodología</a></li> 
+<li><a href="inscripciones.html">Inscripciones</a></li> 
+<li><a href="#contacto">Contacto</a></li> 
+</ul> 
+</div> 
+
+<div class="footer-social"> 
+<h3>Síguenos</h3> 
+<div class="social-icons"> 
+<a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+<a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a> 
+<a href="https://t.me/bladdlal" target="_blank"><i class="fa-brands fa-telegram"></i></a> 
+<a href="https://wa.me/123456789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> 
+</div> 
+</div> 
+
+</div> 
+<script src="/js/landing.js" defer></script> 
+<script src="/js/traslator.js" defer></script> 
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+</script>
+
+<script>
+// Scroll Reveal
+const revealElements = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const revealPoint = 150;
+        if(elementTop < windowHeight - revealPoint){
+            el.classList.add('active');
+        } else {
+            el.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+// Botón pulsante
+const buttons = document.querySelectorAll('.btn-contact');
+buttons.forEach(btn => {
+    btn.classList.add('pulse'); // animación pulse definida en CSS
+});
+</script>
+
+
+
+
+<div class="footer-bottom"> 
+<p>© 2025 SPANGLISH — Todos los derechos reservados.</p> 
+</div> 
+</footer> 
+</header>   
+</body>
+<script src="/js/inscripcion.js"></script>
+<script src="/js/traslator.js"></script>
+</html>
