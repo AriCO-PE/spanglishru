@@ -1,0 +1,138 @@
+/* =========================
+   Reset y base
+========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Bloquea scroll manual */
+  color: #fff;
+}
+
+/* =========================
+   Secciones fullscreen
+========================= */
+.page-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;      
+  align-items: center;          
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+
+  /* Animaciones */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease, background 0.8s ease;
+}
+
+/* Sección activa */
+.page-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   Fondo video
+========================= */
+.page-section video.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;       /* fuerza a cubrir todo el contenedor */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0.4;            /* semitransparente */
+  pointer-events: none;
+}
+
+
+/* =========================
+   Contenido encima del fondo
+========================= */
+.page-section .content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  width: 90%;
+  display: grid;
+  gap: 20px;
+}
+
+/* Titulos */
+.page-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Párrafos */
+.page-section p, .page-section ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Listas elegantes */
+.page-section ul {
+  list-style: none;
+  padding: 0;
+}
+.page-section ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.page-section ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+}
+
+/* =========================
+   Botones scroll
+========================= */
+.scroll-next, .scroll-top {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(26, 42, 80, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  z-index: 200;
+}
+
+.scroll-next:hover, .scroll-top:hover {
+  background: rgba(58, 79, 140, 0.9);
+  transform: translateX(-50%) scale(1.2);
+}
+
+.scroll-next { bottom: 30px; }
+.scroll-top { top: 30px; display: none; }
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .page-section h1 {
+    font-size: 2rem;
+  }
+  .page-section p, .page-section ul {
+    font-size: 1rem;
+  }
+}

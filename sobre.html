@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanglish Landing</title>
+<link rel="stylesheet" href="/style/sobre.css">
+<link rel="stylesheet" href="/style/landing.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header"> 
+    <div class="logo-container"> 
+        <img src="img/LOGO.jpeg" alt="Logo SPANGLISH" class="logo"> 
+        <span class="site-title" data-key="brand_name">SPANGLISH</span> 
+    </div> 
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav"> 
+        <a href="landing.html" data-key="home">Inicio</a> 
+        <a href="sobre.html" data-key="about">Sobre Nosotros</a> 
+        <a href="#methodology" data-key="methodology">Nuestra Metodología</a> 
+        <a href="inscripciones.html" data-key="admissions">Inscripciones</a> 
+        <a href="contacto.html" data-key="contact">Contacto</a> 
+    </nav> 
+</header>
+
+<!-- Selector de idioma -->
+<div class="lang-container">
+    <select id="lang-select">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+    </select>
+</div>
+
+<!-- Sección 1: Misión -->
+<section class="page-section" id="section1">
+  <video class="background-video" autoplay muted loop>
+    <source src="videos/fondo1.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1 data-key="mission_title">Nuestra Misión</h1>
+    <p data-key="mission_text">Nuestra mision es que cada persona, ya sea estudiante o joven con el deseo de aprender español, alcance sus metas lingüísticas sin necesidad de invertir tres años consecutivos en un mismo programa. Cada estudiante podrá avanzar a su propio ritmo y seguir un camino personalizado de aprendizaje.</p>
+  </div>
+</section>
+
+<!-- Sección 2: Historia -->
+<section class="page-section" id="section2">
+  <video class="background-video" autoplay muted loop>
+    <source src="videos/fondo2.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1 data-key="history_title">Nuestra Historia</h1>
+    <p data-key="history_text">Soy un joven latino que llegó a Rusia junto a un grupo de compatriotas, motivados por nuestra pasión por la lengua y la cultura española. Al llegar, nos sorprendió descubrir el interés genuino de muchos rusos por aprender español. Sin embargo, también notamos que, en muchas academias, la enseñanza se centraba en un español demasiado formal o distante de la forma en que realmente se habla en la vida cotidiana. Fue entonces cuando decidimos crear Spanglish, un espacio donde los estudiantes pudieran aprender un español auténtico, conectado con la cultura y el dialecto de nuestros países, y experimentar el idioma de manera práctica y cercana</p>
+  </div>
+</section>
+
+<!-- Sección 3: Diferenciación -->
+<section class="page-section" id="section3">
+  <video class="background-video" autoplay muted loop>
+    <source src="videos/fondo3.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1 data-key="different_title">¿Por qué somos diferentes?</h1>
+    <ul>
+      <li data-key="diff_item1">Profesores nativos de Latinoamérica, con experiencia en enseñanza personalizada</li>
+      <li data-key="diff_item2">Enfoque en comprensión auditiva, para desarrollar habilidades de escucha efectiva</li>
+      <li data-key="diff_item3">Vocabulario práctico y auténtico, reforzado con tareas y desafíos interactivos</li>
+      <li data-key="diff_item4">Materiales interactivos en nuestra plataforma, diseñados para potenciar tu progreso</li>
+      <li data-key="diff_item5">Apoyo adicional con traductores jóvenes rusos, hablantes de español e inglés, disponibles para asistir en cualquier duda</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Sección 4: Únete a Spanglish -->
+<section class="page-section" id="section4">
+  <video class="background-video" autoplay muted loop>
+    <source src="videos/fondo.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1 data-key="join_title">Únete a Spanglish</h1>
+    <p data-key="join_text">No se trata solo de aprender español, sino de vivir la cultura hispana. Un mundo donde el sol brilla, la gente baila, sonríe y celebra la pasión y alegría de ser parte de la comunidad hispana</p>
+  </div>
+</section>
+
+<!-- Botón para bajar -->
+<button id="scroll-next" class="scroll-next" data-key="scroll_next">⬇</button>
+
+
+
+<script src="/js/sobre.js" defer></script>
+<script src="/js/translation.js" defer></script>
+</body>
+</html>
