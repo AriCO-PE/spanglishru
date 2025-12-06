@@ -35,6 +35,7 @@ const translations = {
         group_card_feat3: "Enfocado en prácticas reales",
         group_card_reco: "Recomendado: para quienes disfrutan aprender en grupo y compartir experiencias.",
         contact_btn: "Contáctanos ya"
+        
     },
     en: {
         individual_title: "Individual Spanish Classes",
@@ -240,3 +241,61 @@ langSelect.addEventListener("change", () => {
 
 // Aplicar traducción al cargar
 translateFooter(langSelect.value);
+
+
+// Traducciones para la sección de Clase de Prueba Gratuita
+translations.es.trial_title = "Clase de Prueba Gratuita";
+translations.es.trial_card_title = "1 clase";
+translations.es.trial_card_duration = "Duración: 1h";
+translations.es.trial_price = "GRATIS";
+translations.es.trial_card_desc = "Prueba una clase para experimentar nuestro método de enseñanza.";
+translations.es.trial_card_feat1 = "Interacción con profesores nativos";
+translations.es.trial_card_feat2 = "Acceso a materiales básicos de la clase";
+translations.es.trial_card_feat3 = "Introducción a prácticas reales de conversación";
+translations.es.trial_card_reco = "Recomendado: para nuevos estudiantes que quieran probar antes de inscribirse.";
+
+translations.en.trial_title = "Free Trial Class";
+translations.en.trial_card_title = "1 class";
+translations.en.trial_card_duration = "Duration: 1h";
+translations.en.trial_price = "FREE";
+translations.en.trial_card_desc = "Try a class to experience our teaching method.";
+translations.en.trial_card_feat1 = "Interaction with native teachers";
+translations.en.trial_card_feat2 = "Access to basic class materials";
+translations.en.trial_card_feat3 = "Introduction to real conversation practice";
+translations.en.trial_card_reco = "Recommended: for new students who want to try before enrolling.";
+
+translations.ru.trial_title = "Бесплатный пробный урок";
+translations.ru.trial_card_title = "1 занятие";
+translations.ru.trial_card_duration = "Длительность: 1ч";
+translations.ru.trial_price = "БЕСПЛАТНО";
+translations.ru.trial_card_desc = "Попробуйте урок, чтобы познакомиться с нашим методом обучения.";
+translations.ru.trial_card_feat1 = "Взаимодействие с носителями языка";
+translations.ru.trial_card_feat2 = "Доступ к базовым материалам занятия";
+translations.ru.trial_card_feat3 = "Введение в практику реального общения";
+translations.ru.trial_card_reco = "Рекомендуется: для новых студентов, желающих попробовать перед записью.";
+
+
+
+function forceTrialSectionRussian() {
+    const trialKeys = [
+        'trial_title',
+        'trial_card_title',
+        'trial_card_duration',
+        'trial_price',
+        'trial_card_desc',
+        'trial_card_feat1',
+        'trial_card_feat2',
+        'trial_card_feat3',
+        'trial_card_reco'
+    ];
+
+    trialKeys.forEach(key => {
+        const el = document.querySelector(`[data-key="${key}"]`);
+        if (el && translations.ru[key]) {
+            el.innerHTML = translations.ru[key];
+        }
+    });
+}
+
+// Llamar al cargar la página
+forceTrialSectionRussian();
