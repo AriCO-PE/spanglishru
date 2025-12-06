@@ -1,0 +1,253 @@
+/* CSS específico para la sección del formulario */
+.form-section {
+    background: linear-gradient(145deg, #112240, #0a192f);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.form-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #64ffda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.subtitle {
+    color: #8892b0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #ccd6f6;
+    font-size: 16px;
+}
+
+.form-group label i {
+    color: #64ffda;
+    width: 20px;
+    text-align: center;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px 18px;
+    background-color: rgba(17, 34, 64, 0.7);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #e6f1ff;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #64ffda;
+    box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #8892b0;
+}
+
+.input-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #64ffda;
+    transition: width 0.3s ease;
+}
+
+.form-group input:focus ~ .input-border {
+    width: 100%;
+}
+
+.form-footer {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.info-message {
+    background: rgba(100, 255, 218, 0.08);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #a8b2d1;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.info-message i {
+    color: #64ffda;
+    margin-top: 2px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #64ffda, #52d7b7);
+    color: #0a192f;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+
+.btn-secondary {
+    background: rgba(136, 146, 176, 0.1);
+    color: #8892b0;
+    border: 1px solid rgba(136, 146, 176, 0.2);
+}
+
+.btn-secondary:hover {
+    background: rgba(136, 146, 176, 0.2);
+    color: #ccd6f6;
+}
+
+.telegram-info {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.telegram-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(17, 34, 64, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.telegram-icon {
+    background: linear-gradient(135deg, #0088cc, #34b7f1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.telegram-details h3 {
+    color: #64ffda;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.telegram-details p {
+    color: #a8b2d1;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.small-text {
+    font-size: 13px !important;
+    color: #8892b0 !important;
+}
+
+/* Estilos para errores de validación */
+.error {
+    border-color: #ff6b6b !important;
+}
+
+.error:focus {
+    box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2) !important;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.error-message i {
+    color: #ff6b6b;
+}
+
+/* Responsive para la sección del formulario */
+@media (max-width: 600px) {
+    .form-section {
+        padding: 30px 25px;
+    }
+    
+    .form-header h1 {
+        font-size: 24px;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .telegram-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+/* Estilos específicos para texto ruso en el formulario */
+[lang="ru"] .form-header h1 {
+    font-size: 26px;
+}
+
+[lang="ru"] .subtitle {
+    font-size: 14px;
+}

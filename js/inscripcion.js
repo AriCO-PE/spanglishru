@@ -118,7 +118,8 @@ langSelect.addEventListener('change', () => {
 
 
 // Cargar idioma guardado al inicio
-const savedLang = localStorage.getItem('lang') || 'es';
+localStorage.setItem('lang', 'ru');
+const savedLang = localStorage.getItem('lang') || 'ru';
 langSelect.value = savedLang;
 updateLanguage(savedLang);
 

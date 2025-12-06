@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/landing.css"> 
+    <link rel="stylesheet" href="/style/contact.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+</head>
+<body>
+   
+
+<video autoplay muted loop id="bg-video">
+    <source src="/videos/fondo.mp4" type="video/mp4">
+</video>
+
+<!-- Header --> 
+<header class="site-header"> 
+    <div class="logo-container"> 
+        <img src="img/LOGO.jpeg" alt="Logo SPANGLISH" class="logo"> 
+        <span class="site-title">SPANGLISH</span> 
+    </div> 
+
+    <!-- Botón para menú responsive -->
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <nav class="nav"> 
+        <a href="landing.html" data-key="home">Inicio</a> 
+        <a href="#about" data-key="about">Sobre Nosotros</a> 
+        <a href="#methodology" data-key="methodology">Nuestra Metodología</a> 
+        <a href="inscripciones.html" data-key="admissions">Inscripciones</a> 
+        <a href="#contact" data-key="contact">Contacto</a> 
+    </nav> 
+
+  
+
+</header>
+
+<!-- Selector de idioma -->
+<div class="lang-container">
+    <select id="lang-select">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+    </select>
+</div>
+
+
+<br>
+<br>
+        
+<main class="container">
+    <section class="form-section">
+        <div class="form-header">
+            <h1><i class="fas fa-user-circle"></i> <span data-translate="title">Formulario de Contacto</span></h1>
+            <p class="subtitle" data-translate="subtitle">Complete los siguientes datos para ponerse en contacto</p>
+        </div>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">
+                    <i class="fas fa-user"></i> <span data-translate="name_label">Nombre completo</span>
+                </label>
+                <input type="text" id="nombre" name="nombre" required 
+                       placeholder="Ingrese su nombre completo"
+                       data-placeholder-es="Ingrese su nombre completo"
+                       data-placeholder-en="Enter your full name"
+                       data-placeholder-ru="Введите ваше полное имя">
+                <div class="input-border"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="edad">
+                    <i class="fas fa-birthday-cake"></i> <span data-translate="age_label">Edad</span>
+                </label>
+                <input type="number" id="edad" name="edad" min="1" max="120" required 
+                       placeholder="Ingrese su edad en años"
+                       data-placeholder-es="Ingrese su edad en años"
+                       data-placeholder-en="Enter your age in years"
+                       data-placeholder-ru="Введите ваш возраст в годах">
+                <div class="input-border"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="numero">
+                    <i class="fas fa-phone"></i> <span data-translate="phone_label">Número de teléfono</span>
+                </label>
+                <input type="tel" id="numero" name="numero" required 
+                       placeholder="Ejemplo: +34 600 123 456"
+                       data-placeholder-es="Ejemplo: +7 900 123 45 67"
+                       data-placeholder-en="Example: +7 900 123 45 67"
+                       data-placeholder-ru="Пример: +7 900 123 45 67">
+                <div class="input-border"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="telegram">
+                    <i class="fab fa-telegram"></i> <span data-translate="telegram_label">Usuario de Telegram</span>
+                </label>
+                <input type="text" id="telegram" name="telegram" required 
+                       placeholder="@usuario (sin el símbolo @)"
+                       data-placeholder-es="@usuario (sin el símbolo @)"
+                       data-placeholder-en="@username (without @ symbol)"
+                       data-placeholder-ru="@имяпользователя (без символа @)">
+                <div class="input-border"></div>
+            </div>
+            
+            <div class="form-footer">
+                <p class="info-message">
+                    <i class="fas fa-info-circle"></i> 
+                    <span data-translate="info_message">Al enviar este formulario, se contactará con usted a través de Telegram</span>
+                </p>
+                <div class="button-group">
+                    <button type="button" class="btn btn-secondary" id="resetBtn">
+                        <i class="fas fa-redo"></i> <span data-translate="clear_btn">Limpiar</span>
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fab fa-telegram-plane"></i> <span data-translate="submit_btn">Enviar a @bladdlal</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="telegram-info">
+            <div class="telegram-card">
+                <div class="telegram-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="telegram-details">
+                    <h3 data-translate="contact_title">Contacto en Telegram</h3>
+                    <p><span data-translate="contact_info">Los datos se enviarán a:</span> <strong>@bladdlal</strong></p>
+                    <p class="small-text" data-translate="contact_time">Se le contactará en un plazo máximo de 24 horas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+
+
+
+
+
+
+
+<!-- footer --> 
+<footer class="footer-elegant"> 
+<div class="footer-container"> 
+
+<div class="footer-brand"> 
+<h2>SPANGLISH</h2> 
+<p>Aprende idiomas de forma moderna, práctica y 100% conversacional.</p> 
+</div> 
+
+<div class="footer-links"> 
+<h3>Enlaces</h3> 
+<ul> 
+<li><a href="landing.html">Inicio</a></li> 
+<li><a href="#about">Sobre Nosotros</a></li> 
+<li><a href="#metodologia">Metodología</a></li> 
+<li><a href="inscripciones.html">Inscripciones</a></li> 
+<li><a href="#contacto">Contacto</a></li> 
+</ul> 
+</div> 
+
+<div class="footer-social"> 
+<h3>Síguenos</h3> 
+<div class="social-icons"> 
+<a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+<a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a> 
+<a href="https://t.me/bladdlal" target="_blank"><i class="fa-brands fa-telegram"></i></a> 
+<a href="https://wa.me/+51981183443" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> 
+</div> 
+</div> 
+
+</div> 
+
+<div class="footer-bottom"> 
+<p>© 2025 SPANGLISH — Todos los derechos reservados.</p> 
+</div> 
+</footer> 
+
+
+
+</body>
+<script src="/js/inscripcion.js"></script>
+<script src="/js/contact.js"></script>
+</html>

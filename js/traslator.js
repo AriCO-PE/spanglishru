@@ -1,4 +1,6 @@
 const langSelect = document.getElementById("lang-select");
+langSelect.value = "ru"; // ← FORZAR RUSO SIEMPRE AL INICIAR
+
 
 /* ================= HEADER ================= */
 const translationsHeader = {
