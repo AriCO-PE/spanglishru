@@ -227,4 +227,32 @@
 
 <script src="/js/metodology.js"></script>
 </body>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".faq-item");
+
+  items.forEach(item => {
+    const btn = item.querySelector("button");
+    const p = item.querySelector("p");
+
+    // Oculta las respuestas al inicio
+    p.style.maxHeight = "0";
+    p.style.overflow = "hidden";
+    p.style.transition = "max-height 0.4s ease";
+
+    btn.addEventListener("click", () => {
+      const isOpen = p.style.maxHeight !== "0px";
+
+      // Cierra todos los demás
+      items.forEach(i => {
+        const content = i.querySelector("p");
+        if (content !== p) content.style.maxHeight = "0";
+      });
+
+      // Alterna este
+      p.style.maxHeight = isOpen ? "0" : p.scrollHeight + "px";
+    });
+  });
+});
+</script>
 </html>
