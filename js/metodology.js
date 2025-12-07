@@ -32,11 +32,11 @@ menuToggle.addEventListener('click', () => {
 const translations = {
   "ru": {
     "brand_name":"SPANGLISH",
-    "home":"Главная",
-    "about":"О нас",
-    "methodology":"Методика",
-    "admissions":"Записи",
-    "contact":"Контакты",
+    "home": "Главная",
+    "about": "О нас",
+    "methodology": "Наша методология",
+    "admissions": "Поступление",
+    "contact": "Контакты",
     "hero_title":"Методика Spanglish",
     "hero_subtitle":"Испанский – это больше, чем просто говорить",
     "hero_button":"Исследовать методику",
