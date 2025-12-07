@@ -399,10 +399,6 @@ main p {
     display: flex;
     justify-content: flex-end; /* alineado a la derecha */
     padding: 15px 25px;
-    background: rgba(255,255,255,0.95); /* fondo limpio y translúcido */
-    box-shadow: 0 -2px 12px rgba(0,0,0,0.05); /* sombra sutil arriba */
-    z-index: 999; 
-    backdrop-filter: blur(8px); /* efecto cristal suave */
 }
 
 #lang-select {
